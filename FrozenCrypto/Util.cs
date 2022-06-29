@@ -72,7 +72,7 @@ namespace FrozenCrypto
             {
                 var vidx = i / tsize;
                 var bidx = i % tsize;
-                buffer[i] = byte.CreateTruncating(array[vidx] >> (bidx * 8));
+                buffer[i] = IBinaryInteger<byte>.CreateTruncating(array[vidx] >> (bidx * 8));
             }
 
             return buffer;
@@ -88,7 +88,7 @@ namespace FrozenCrypto
             {
                 var bidx = i / tsize;
                 buffer[bidx] <<= 8;
-                buffer[bidx] |= T.CreateTruncating(array[i]);
+                buffer[bidx] |= IBinaryInteger<T>.CreateTruncating(array[i]);
             }
 
             return buffer;
