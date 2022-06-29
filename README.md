@@ -1,5 +1,5 @@
 # FrozenCrypto
-Encryptor and decryptor for Nintendo Switch Sports.
+Encryptor and decryptor for Nintendo Switch Sports saves.
 
 # Encrypting
 Args:
